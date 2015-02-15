@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <title>MyStream - Creative HTML5 Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <!-- favicons -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon-57.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="favicon-72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="favicon-114.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="favicon-144.png" sizes="144x144">
+  <!-- font -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
+   <!-- main -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css"> 
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">  
+  <!-- colors -->
+  <link rel="stylesheet" href="css/colors.css">  
+
+</head>
+
+<body>
+
+	<section id="navigation-container">
+		<div id="nav" class="navbar">
+			<div class="menuwrapper">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="index-slideshow.html">Image Slideshow</a>
+								</li>
+								<li>
+									<a href="index-video.html">Video Background</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="index.html#section1" class="dmscolling">INTRO</a></li>
+						<li><a href="index.html#section2" class="dmscolling">ABOUT</a></li>
+						<li><a href="index.html#section3" class="dmscolling">GALLERY</a></li>
+						<li><a href="index.html#section4" class="dmscolling">SHOP</a></li>
+						<li><a href="index.html#section5" class="dmscolling">JOURNAL</a></li>
+						<li><a href="index.html#section6" class="dmscolling">CONTACT</a></li>
+						<li><a href="cart.html" class="dmscolling"><i class="fa fa-shopping-cart"></i> (0) ITEM</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>  	
+	</section>
+    
+	<section id="section5" class="colon4 color1">
+    	<div class="container">
+            <div class="single_tagline">
+                <h1>Whishlist</h1>
+                <h4>Your tagline goes here</h4>
+            </div>  
+            
+        	<div class="blog-container">
+            	<div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="post-wrap">
+
+           <table class="table table-striped checkout" data-effect="fade">
+              <thead>
+                <tr>
+                  <th>Item Name</th>
+                  <th>Item Price</th>
+                  <th>Quantity</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img width="50" src="demos/01_photo.jpg" alt=""> <a href="#">THINK ABOUT LIFE</a></td>
+                  <td>$55.00</td>
+                  <td><input id="verify" class="form-control quantity" type="text" value="1" name=""></td>
+                  <td><a class="remove" href="#" title="Remove this item"></a></td>
+                </tr>
+              </tbody>
+            </table> 
+    		<div class="clearfix"></div>
+            
+            <div class="pull-right">
+            <a class="btn btn-primary" href="#">UPDATE CART</a> <a class="btn btn-primary" href="#">SAVE CART</a> 
+            </div>
+                        
+    		<div style="margin-bottom:20px;" class="clearfix"></div>
+            
+			<div class="well text-right"><strong>TOTAL: $55.00</strong></div>
+
+    		<div class="clearfix"></div>
+
+			<div class="payments">
+                <p><img alt="" src="images/payments.png"></p>
+                
+                <label class="checkbox-inline">
+                <input id="inlineCheckbox1" type="checkbox" value="option1">
+                <strong>PAYPAL</strong>
+                </label>
+                <label class="checkbox-inline">
+                <input id="inlineCheckbox2" type="checkbox" checked="" value="option2">
+                <strong>CREDIT CARD</strong>
+                </label>
+            </div>
+
+    		<div class="clearfix"></div>
+            <div class="divider"></div>
+            
+            <h4 class="title">PERSONAL INFORMATION</h4>
+
+			<form id="personalinfo" action="" name="personalinfo" method="post">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="text" name="name" id="email" class="form-control" placeholder="example@yoursite.com">
+                <label for="fname">First Name <span class="required">*</span></label>
+                <input type="text" name="fname" id="fname" class="form-control" placeholder="John"> 
+                <label for="lname">Last Name </label>
+                <input type="text" name="lname" id="lname" class="form-control" placeholder="DOE"> 
+            </form>
+                    
+    		<div class="clearfix"></div>
+            <div class="divider"></div>
+            
+            <h4 class="title">CART DETAILS</h4>
+            
+			<form id="cartinfo" action="" name="cartinfo" method="post">
+                <label for="cardnumber">Card Number <span class="required">*</span></label>
+                <input type="text" name="cardnumber" id="cardnumber" class="form-control" placeholder="Your card number">
+                <label for="cvc">CVC <span class="required">*</span></label>
+                <input type="text" name="cvc" id="cvc" class="form-control" placeholder="Security code"> 
+                <label for="ncard">Name on the Card <span class="required">*</span></label>
+                <input type="text" name="ncard" id="ncard" class="form-control" placeholder="Name on the card"> 
+                <label for="ncard">Expiration (MM/YY) <span class="required">*</span></label>
+                
+				<div class="clearfix"></div>
+                
+				<select class="form-control" style="width:75px; float:left; margin-right:10px;">
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+					<option>06</option>
+					<option>07</option>
+					<option>08</option>
+					<option>09</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>
+				<select class="form-control" style="width:75px;float:left">
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+				</select>
+            </form>
+            
+    		<div class="clearfix"></div>
+            <div class="divider"></div>
+            
+            <h4 class="title">BILLING INFORMATION</h4>
+            
+			<form id="billinginfo" action="" name="billinginfo" method="post">
+                <label for="baddress">Billing Address 1</label>
+                <input type="text" name="baddress" id="baddress" class="form-control" placeholder="Address line 1">
+                <label for="baddress1">Billing Address 2 (Optional)</label>
+                <input type="text" name="baddress1" id="baddress1" class="form-control" placeholder="Address line 2">
+                <label for="bcity">Billing City</label>
+                <input type="text" name="bcity" id="bcity" class="form-control" placeholder="Your city">
+                <label for="bzip">Zip / Postal Code </label>
+                <input type="text" name="bzip" id="bzip" class="form-control" placeholder="Your ZIP or postal code">
+                
+				<div class="clearfix"></div>
+                
+				<select class="form-control">
+					<option>United States</option>
+					<option>Other Country</option>
+					<option>Other Country</option>
+					<option>Other Country</option>
+					<option>Other Country</option>
+					<option>Other Country</option>
+					<option>Other Country</option>
+					<option>Other Country</option>
+				</select>
+				<select class="form-control">
+					<option>Alabama</option>
+					<option>Other City</option>
+					<option>Other City</option>
+					<option>Other City</option>
+					<option>Other City</option>
+					<option>Other City</option>
+					<option>Other City</option>
+					<option>Other City</option>
+				</select>
+                <br>
+				<div class="clearfix"></div>
+				<button class="btn btn-primary">SHOW TERMS</button>
+				<div style="margin-bottom:20px;" class="clearfix"></div>
+
+                <label class="checkbox-inline">
+                    <input id="inlineCheckbox3" type="checkbox" value="option1">
+                    <strong>AGREE TO TERMS</strong>
+                </label>
+                
+             	<br><br>
+               		<div class="well"><strong>PURCHASE TOTAL:</strong> $55.00</div>
+                <br>
+            	<button class="btn btn-primary">PURCHASE THIS ITEM</button>
+
+					</div><!-- post-wrap -->
+   				</div><!-- col-12 -->  
+            </div><!-- end blog-container --> 
+            
+		</div><!-- container -->
+    </section><!-- colon5 -->
+
+	<footer class="footer-wrapper color4">
+		<div class="container">
+			<div class="footer-container">
+            	<div class="col-lg-6 col-md-6 col-sm-12 pull-left">
+                    <ul class="nav clearfix">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Site Terms</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    
+					<ul class="footer-social pull-left clearfix">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                    </ul>
+                </div>   
+            	<div class="col-lg-6 col-md-6 col-sm-12">
+                	<h4 class="title"><i class="fa fa-paperclip"></i> Copyrights</h4>
+                	<p class="copyrights-text">Lorem Ipsum is simply dummy text of the printing and typesetting industy has been the industry"s standard.</p>
+                </div>           
+			</div><!-- row -->
+		</div><!-- container -->
+    </footer><!-- footer -->
+    
+    <div class="dmtop">Scroll to Top</div>
+
+    <!-- Main Scripts-->
+    <!-- Google Map API -->
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&v=3.exp"></script>
+    <!-- jQuery Min -->
+	<script src="js/jquery.min.js"></script>
+    <!-- Google Map -->
+	<script src="js/jquery.gmap.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery Easing -->
+	<script src="js/jquery.easing.min.js"></script>
+    <!-- Retina Display -->
+    <script src="js/retina-1.1.0.js"></script>	
+	<!-- Super Slides -->
+	<script src="js/jquery.superslides.js"></script>
+	<!-- Navigation Menu & Scroll Effects -->
+	<script src="js/smooth-scroll.js"></script>
+	<!-- Loading Effects -->
+    <script src="js/jquery.unveilEffects.js"></script>	
+    <!-- Image Hovers -->
+	<script src="js/hover_pack.js"></script>
+    <!-- Portfolio -->
+	<script src="js/jquery.isotope.min.js"></script>
+    <!-- Fitvids -->
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- Plugins -->
+    <script src="js/application.js"></script>
+
+	<script src="js/jquery.flexslider.js"></script>  
+    <script>
+        $('.flexslider').flexslider({
+            animation: 'fade',
+            slideshow: true,
+            animationLoop: true,
+            controlNav: false,
+            animationLoop: true,
+          });
+    </script>
+    
+  </body>
+</html>
