@@ -1,0 +1,28 @@
+{
+  "name": "mylisa.co",
+  "version": "1.0.1",
+  "private": "true",
+  "description": "Website for mylisa.co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VSWS/mylisa.co.git"
+  },
+  "keywords": [
+    "mylisa"
+  ],
+  "author": "NgaNguyenDuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VSWS/mylisa.co/issues"
+  },
+  "homepage": "https://github.com/VSWS/mylisa.co",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
