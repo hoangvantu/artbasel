@@ -1,0 +1,305 @@
+@charset "UTF-8";
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+.flexslider .slides,
+.flex-control-nav,
+.flex-direction-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+.flexslider .slides > li {
+  -webkit-backface-visibility: hidden;
+  display: none;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+.flexslider .slides {
+  *zoom: 1;
+}
+.flexslider .slides:before, .flexslider .slides:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+.flexslider .slides:after {
+  clear: both;
+}
+
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+.flexslider {
+  margin: 0 0;
+  position: relative;
+}
+
+.flex-viewport {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.flexslider.carousel li {
+  margin-right: 5px;
+}
+
+.flex-direction-nav > li {
+  *display: inline;
+}
+
+.flex-prev,
+.flex-next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity:1;
+  -webkit-transition: background 0.2s, opacity 0.2s;
+  -moz-transition: background 0.2s, opacity 0.2s;
+  -o-transition: background 0.2s, opacity 0.2s;
+  transition: background 0.2s, opacity 0.2s;
+  background: #2a2a2a;
+  background: rgba(236, 100, 75, 0.8);
+  color: transparent;
+  font-size: 0px;
+  height: 25px;
+  line-height: 0px;
+  margin-top: -18px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 25px;
+  *color: white;
+  *font-size: 11px;
+  *height: auto;
+  *padding: 0 6px;
+  *width: auto;
+}
+.flex-prev:hover, .flex-prev:focus,
+.flex-next:hover,
+.flex-next:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  background: #2a2a2a;
+  background: rgba(236, 100, 75, 0.8);
+  color: transparent;
+  text-decoration: none;
+  *color: white;
+}
+.flex-prev:before,
+.flex-next:before {
+  color: #ffffff;
+  font-size:16px !important;
+	font-family: 'FontAwesome';
+}
+
+.flex-prev {
+  left: -15px;
+}
+.flex-prev:before {
+	content: "\f104";
+}
+
+.flex-next {
+  right: -15px;
+}
+.flex-next:before {
+	content: "\f105";
+}
+
+.flex-disabled, .flex-disabled:hover, .flex-disabled:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
+  opacity: 0.7;
+  cursor: default;
+}
+
+.flex-control-nav {
+  bottom: -30px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.flex-control-nav li {
+  display: inline-block;
+  margin: 0 8px;
+  *display: inline;
+  *zoom: 1;
+}
+
+.flex-control-paging li a {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+  background: #cccccc;
+  cursor: pointer;
+  display: block;
+  height: 12px;
+  text-indent: -9999px;
+  width: 12px;
+}
+.flex-control-paging li a:hover, .flex-control-paging li a:focus {
+  background: #555555;
+}
+.flex-control-paging li a.flex-active {
+  background: #167edd;
+  cursor: default;
+}
+
+.flex-control-thumbs {
+  *zoom: 1;
+  margin: 12px 0 0;
+  position: static;
+}
+.flex-control-thumbs:before, .flex-control-thumbs:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+.flex-control-thumbs:after {
+  clear: both;
+}
+.flex-control-thumbs li {
+  float: left;
+  margin: 0;
+  width: 25%;
+  *width: 24.9%;
+}
+.flex-control-thumbs img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+.flex-control-thumbs img:hover, .flex-control-thumbs img:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  cursor: default;
+}
+
+.flex-caption {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  color: #ffffff;
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  right: 0;
+}
+.flex-caption h1, .flex-caption h2, .flex-caption h3, .flex-caption h4, .flex-caption h5, .flex-caption h6, .flex-caption p {
+  margin: 5px 0;
+}
+@media (max-width: 639px) {
+	.flex-direction-nav .flex-prev, 
+	.flex-direction-nav .flex-next,
+  .flex-caption {
+    display: none;
+  }
+}
+
+.flex-direction-nav-on-top .flex-direction-nav {
+  position: absolute;
+  right: 1px;
+  bottom:1px;
+}
+.flex-direction-nav-on-top .flex-direction-nav > li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.flex-direction-nav-on-top:hover .flex-prev,
+.flex-direction-nav-on-top:hover .flex-next,
+.flex-direction-nav-on-top:hover .flex-disabled:hover,
+.flex-direction-nav-on-top:hover .flex-disabled:focus, .flex-direction-nav-on-top:focus .flex-prev,
+.flex-direction-nav-on-top:focus .flex-next,
+.flex-direction-nav-on-top:focus .flex-disabled:hover,
+.flex-direction-nav-on-top:focus .flex-disabled:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.flex-direction-nav-on-top:hover .flex-disabled:hover,
+.flex-direction-nav-on-top:hover .flex-disabled:focus, .flex-direction-nav-on-top:focus .flex-disabled:hover,
+.flex-direction-nav-on-top:focus .flex-disabled:focus {
+  *color: #ffffff;
+}
+.flex-direction-nav-on-top .flex-prev,
+.flex-direction-nav-on-top .flex-next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  background: transparent;
+  position: static;
+  *color: #ffffff;
+}
+.flex-direction-nav-on-top .flex-prev:hover, .flex-direction-nav-on-top .flex-prev:focus,
+.flex-direction-nav-on-top .flex-next:hover,
+.flex-direction-nav-on-top .flex-next:focus {
+  color: transparent;
+  text-decoration: none;
+  *color: #ffffff;
+}
+.flex-direction-nav-on-top .flex-prev:hover:before, .flex-direction-nav-on-top .flex-prev:focus:before,
+.flex-direction-nav-on-top .flex-next:hover:before,
+.flex-direction-nav-on-top .flex-next:focus:before {
+  color: #ffffff;
+}
+.flex-direction-nav-on-top .flex-prev:before
+{
+    cursor: pointer;
+    font-size: 24px;
+    height: 30px;
+    line-height: 2;
+    position: absolute;
+    right: 29px;
+	font-weight:300;
+    bottom: 1px;
+	z-index:9999;
+    width: 30px;
+}
+.flex-direction-nav-on-top .flex-next:before {
+    cursor: pointer;
+    font-size: 24px;
+    height: 30px;
+    line-height: 2;
+	z-index:9999;
+    position: absolute;
+	font-weight:300;
+    right: -1px;
+    bottom: 1px;
+    width: 30px;
+}
+.flex-direction-nav-on-top .flex-disabled {
+  *color: #ffffff;
+}
+.flex-direction-nav-on-top .flex-disabled:before, .flex-direction-nav-on-top .flex-disabled:hover:before, .flex-direction-nav-on-top .flex-disabled:focus:before {
+  color: #ffffff;
+}
+
+.flex-direction-nav-on-top .flex-prev:before,
+.flex-direction-nav-on-top .flex-next:before
+{		background: #2a2a2a !important}
+
