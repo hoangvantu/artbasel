@@ -62,8 +62,10 @@ function signInValidate(form) {
         },
         success: function(data) {
             setCookie('tokenId', data, 7);
+
             // console.log('Token id: ', getCookie('tokenId'));
             alert('Send to Watch list successful');
+            $('#myModal').modal('hide');
             // localStorage.setItem('User', data);
         },
         error: function(err) {
