@@ -61,13 +61,14 @@ function signInValidate(form) {
             withCredentials: true
         },
         success: function(data) {
-            
             setCookie('tokenId', data, 7);
-            console.log('Token id: ', getCookie('tokenId'));
+            // console.log('Token id: ', getCookie('tokenId'));
+            alert('Send to Watch list successful');
             // localStorage.setItem('User', data);
         },
         error: function(err) {
             console.log(err);
+            alert('Login failed');
             // $('.signin .secHeading').after('<div class="errors"></div>');
             // $('.errors').html('Sorry '+JSON.parse(err.responseText).error);
             $('.errors').slideDown();

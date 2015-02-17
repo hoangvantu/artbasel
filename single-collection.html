@@ -54,6 +54,62 @@
 		</div>  	
 	</section>
     
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/cancel.png" alt=""></span>
+            </button>
+            <img src="images/logo_200px_black.png" width="200px" alt="">
+          </div>
+          <div class="modal-body">
+            <h5>Welcome to ARTADVISER.TV</h5>
+            <div class="sgForm">
+              <form id="frm_signin" _lpchecked="1">
+                <input type="text" placeholder="E-mail address" class="emailInp email" name="email" style="cursor: auto;">
+                <input type="password" placeholder="Password" class="passInp password" name="password" style="cursor: auto;">
+                <input type="button" onclick="signInValidate(this);" value="SIGN IN" class="singButton sign-up-submit btn_submit">
+              </form>
+              <ul class="pointNav">
+                <li><a href="" data-toggle="modal" data-target="#reset-password" class="rightPoint">Forgot
+                    password</a>
+                </li>
+                <li><a href="" data-toggle="modal" data-target="#sign-up" class="rightPoint">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/cancel.png" alt=""></span>
+            </button>
+            <img src="images/logo_200px_black.png" width="200px" alt="">
+          </div>
+          <div class="modal-body">
+            <h5>Sign up for a new ARTADVISER account</h5>
+            <div class="sgForm">
+              <form id="frm_signin" _lpchecked="1">
+                <input type="text" placeholder="E-mail address" class="emailInp email" name="email" style="cursor: auto;">
+                <input type="password" placeholder="Password" class="passInp password" name="password" style="cursor: auto;">
+                <input type="password" placeholder="Re-enter password" class="passInp conf_password" name="conf_password" style="cursor: auto;">
+                <input type="submit" onclick="return signInValidate(this);" value="SIGN IN" class="singButton btn_submit">
+              </form>
+              <ul class="pointNav">
+                <li><a href="" data-toggle="modal" data-target="#sign-in" class="rightPoint">Sign in</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 	<section id="section5" class="colon4 color1">
     	<div class="container">
             
@@ -143,9 +199,12 @@
 									
 									<div class="col-lg-4 col-md-4 col-sm-4">
                                         <div class="buttons text-center">
-                                            <a class="btn dmbutton" href="popupsignin.html"></i> WATCH LIST</a>
+                                            <a class="btn dmbutton" href="javascript:void(0)" data-toggle="modal" data-target="#myModal"></i> WATCH LIST</a>
                                         </div><!-- buttons -->
                                     </div>
+
+
+
 									
                                 </div><!-- theme_details -->
                                 <br><br>
@@ -256,6 +315,7 @@
 		  swfPath: "/scripts/jPlayer"
 		});*/
 	</script>
+    <script src="js/auth.js"></script>
     <!-- Google Map -->
 	<script src="js/jquery.gmap.min.js"></script>
     <!-- Bootstrap -->
